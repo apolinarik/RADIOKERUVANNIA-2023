@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"nrf-rx\startup_stm32f103xb.o"
+"nrf-rx\my_nrf24.o"
+"nrf-rx\main.o"
+"nrf-rx\stm32f1xx_it.o"
+"nrf-rx\stm32f1xx_hal_msp.o"
+"nrf-rx\stm32f1xx_hal_gpio_ex.o"
+"nrf-rx\stm32f1xx_hal_spi.o"
+"nrf-rx\stm32f1xx_hal.o"
+"nrf-rx\stm32f1xx_hal_rcc.o"
+"nrf-rx\stm32f1xx_hal_rcc_ex.o"
+"nrf-rx\stm32f1xx_hal_gpio.o"
+"nrf-rx\stm32f1xx_hal_dma.o"
+"nrf-rx\stm32f1xx_hal_cortex.o"
+"nrf-rx\stm32f1xx_hal_pwr.o"
+"nrf-rx\stm32f1xx_hal_flash.o"
+"nrf-rx\stm32f1xx_hal_flash_ex.o"
+"nrf-rx\stm32f1xx_hal_exti.o"
+"nrf-rx\stm32f1xx_hal_tim.o"
+"nrf-rx\stm32f1xx_hal_tim_ex.o"
+"nrf-rx\stm32f1xx_hal_uart.o"
+"nrf-rx\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "NRF-RX\NRF-RX.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "NRF-RX.map" -o NRF-RX\NRF-RX.axf
